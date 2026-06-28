@@ -1,0 +1,18 @@
+# Build output (binaries, .axf, .bin, .map)
+VSCode/out/
+
+# CMake temporary build files
+VSCode/tmp/
+
+# Generated CMSIS-Build index/pack files (recreated by cbuild on every build)
+VSCode/*.cbuild-idx.yml
+VSCode/*.cbuild-pack.yml
+
+# VSCode workspace settings (local paths, debug configs — machine-specific)
+.vscode/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.suo
+*.user

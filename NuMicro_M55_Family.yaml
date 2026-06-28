@@ -1,0 +1,552 @@
+name: NuMicro M55 Family
+generated_from_pack: true
+pack_file_release: 3.1.4-rc.3
+variants:
+- name: M5531H2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M5531K2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M5531R2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1H2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1H3H2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1H3K2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1H3R2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1K2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+- name: M55M1R2LJAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v2 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x100000
+      end: 0x300000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10100000
+      end: 0x10300000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20250000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30250000
+    cores:
+    - main
+  flash_algorithms:
+  - m5531_ap_2m
+  - m5531_ld_8
+  - m5531_ns_2m
+flash_algorithms:
+- name: m5531_ap_2m
+  description: M5531 APROM 2MB
+  default: true
+  instructions: QfIADE/yABHE8gAMWSLP9v9xTPgBIBYiTPgBIIgiTPgBIFz4ARABKV3RQfIEAcTyAAEKaBIHCNTc+AAgQvAIAsz4ACAKaBIH/NVP8AESaSPB+DgiRPIAAsTyBAITYBJoAvApAikqPtFC8hQDxPIAAxpokgdC8hACxPIAAgnVAL8QaAAo/NQBIBBgAL8YaAAo/NTR+PwDAPAHAAQoBL8AIMH4/APc+AAAIPBAAMz4AABI8itAwfIAAEhhAiCIYdz4AABA8EAAzPgAAAC/CGhABvzVBCDB+PwDT/LwQc/2/3EAIFBQcEcBIHBHRPIAAcTyBAEAvwhswAf80QhoIPABAgAgCmBwR0TyAAzE8gQMAL/c+EAw2wf70dz4ADBD8EADzPgAMMz4DAABIMz4BBDM+AggzPgQAL/zb48Av9z4QADAB/vR3PgAAEEGUr8AIMz4AAABIHBHTvIAAQAizvb/cQFAIiD/98+/8LWBsAEqG9hO8gAHFEYNRgZGzvb/dwAqHL9K9gMkwPJVBAC/dbFW+AQLIkYA6gcBIiD/97T/pfEBBQi5L/APwAEgAOAAIAGw8L0t6fBFgbAURoIHG9EDMUTyAAfE8gQHIfADBTlsyQf80SDwgFgiRkBCOWhv818gqEJB8EABUOo1hjlgQEYxRgDwZPgYsQEgAbC96PCFpesGDCzwDwoG6wgAuvEADwTrBgJJ0E/wJw5P8AEIx/gM4HhgE2i69QB/x/iAMFNox/iEMJNox/iIMFNG1GjH+IxAKL9P9ABzx/gQgLPxEAS/82+PHdAWRgC/1/jAUBXwMA/60TVGVfgQH8f4gBBpaMf4hBAAv9f4wBAR8MAP+tGxaRA8x/iIEPFpLkbH+IwQ49HX+MAQyQf70TxoYQYM1BhEuusDChpEudEM8A8BAPAG+AAoX+oPkJ/nPGCc5xC1RPIABE/wIQzE8gQExPgMwLmxT/ABDGBgE2ijYMT4EMC/82+PAL8jbNsH/NHU+ADgX+pOYwfUBDkA8QQAAvEEAunRACAQvQEgxPgA4BC9gwcYv3BHsLVE8gADAzHE8gQDAPCAXAC/HGzkB/zRHGgh8AMBRPBABCDwgFAcYAAk3GDJsU/wAQ5YYMP4EOC/82+PAL8cbOQH/NEcaGUGCtScaBVorEIH0QQ5APEEAALxBALp0QDgHGBA6gwAveiwQHBHAAAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xeb
+  pc_program_page: 0x1b3
+  pc_erase_sector: 0x157
+  pc_verify: 0x30d
+  data_section_offset: 0x380
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x300000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 200
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: m5531_ld_8
+  description: M5531 LDROM 8kB
+  default: true
+  instructions: QfIADE/yABHE8gAMWSLP9v9xTPgBIBYiTPgBIIgiTPgBIFz4ARABKV3RQfIEAcTyAAEKaBIHCNTc+AAgQvAIAsz4ACAKaBIH/NVP8AESaSPB+DgiRPIAAsTyBAITYBJoAvApAikqPtFC8hQDxPIAAxpokgdC8hACxPIAAgnVAL8QaAAo/NQBIBBgAL8YaAAo/NTR+PwDAPAHAAQoBL8AIMH4/APc+AAAIPBAAMz4AABI8itAwfIAAEhhAiCIYdz4AABA8EAAzPgAAAC/CGhABvzVBCDB+PwDT/LwQc/2/3EAIFBQcEcBIHBHRPIAAcTyBAEAvwhswAf80QhoIPABAgAgCmBwR0TyAAzE8gQMAL/c+EAw2wf70dz4ADBD8EADzPgAMMz4DAABIMz4BBDM+AggzPgQAL/zb48Av9z4QADAB/vR3PgAAEEGUr8AIMz4AAABIHBHTvIAAQAizvb/cQFAIiD/98+/8LWBsAEqG9hO8gAHFEYNRgZGzvb/dwAqHL9K9gMkwPJVBAC/dbFW+AQLIkYA6gcBIiD/97T/pfEBBQi5L/APwAEgAOAAIAGw8L0t6fBFgbAURoIHG9EDMUTyAAfE8gQHIfADBTlsyQf80SDwgFgiRkBCOWhv818gqEJB8EABUOo1hjlgQEYxRgDwZPgYsQEgAbC96PCFpesGDCzwDwoG6wgAuvEADwTrBgJJ0E/wJw5P8AEIx/gM4HhgE2i69QB/x/iAMFNox/iEMJNox/iIMFNG1GjH+IxAKL9P9ABzx/gQgLPxEAS/82+PHdAWRgC/1/jAUBXwMA/60TVGVfgQH8f4gBBpaMf4hBAAv9f4wBAR8MAP+tGxaRA8x/iIEPFpLkbH+IwQ49HX+MAQyQf70TxoYQYM1BhEuusDChpEudEM8A8BAPAG+AAoX+oPkJ/nPGCc5xC1RPIABE/wIQzE8gQExPgMwLmxT/ABDGBgE2ijYMT4EMC/82+PAL8jbNsH/NHU+ADgX+pOYwfUBDkA8QQAAvEEAunRACAQvQEgxPgA4BC9gwcYv3BHsLVE8gADAzHE8gQDAPCAXAC/HGzkB/zRHGgh8AMBRPBABCDwgFAcYAAk3GDJsU/wAQ5YYMP4EOC/82+PAL8cbOQH/NEcaGUGCtScaBVorEIH0QQ5APEEAALxBALp0QDgHGBA6gwAveiwQHBHAAAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xeb
+  pc_program_page: 0x1b3
+  pc_erase_sector: 0x157
+  pc_verify: 0x30d
+  data_section_offset: 0x380
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf100000
+      end: 0xf102000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 200
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: m5531_ns_2m
+  description: M5531 Non-Secure APROM 2MB
+  default: true
+  instructions: eEbAAEnUQPIAEVkgxPIAAQhgFiAIYIggCGAIaAEoWNHR+AAvQfIEAMTyAABC8CgCwfgAL0/wARHA+DgSRPIAAcTyBAFpIgpgCWgB8CkBKSk/0QC/AWgB8CgBKCn60ULyFALE8gACEWiJB0LyEAHE8gABCNULaAAr/NQCIwtgAL8TaAAr/NQCIsD4/CNP8vBCz/b/cgAgiFBwR0/woEAAaLixQPIAEFkhxfIAAAFgFiEBYIghAWAAaAEoCtFE8gAASSHF8gQAAWAAaAAoX+ofkHBHASBwR0TyAAF4RkTyQALE8gQBEPCAUMXyBAIIvwHxQAIAvxNo2wf80QAoT/AAAk/wAAAYvwHxgFEKYHBHAL8DbNsH/NEDaEPwQAMDYCIjw2BBYAEhgmABYb/zb48AvwFsyQf80QFoSgZSvwAgAWABIHBHeUZE8gACCQ/E8gQCYfMcck7yAAHO9v9xAUAQRgAi//fUvy3p8EEBKiLYBkZ4RkTyAAcAD8TyBAdO8gAIFEYNRmDzHHfO9v94ACocv0r2AyTA8lUEfbFW+AQLIkYA6ggBOEb/97L/pfEBBQi5L/APwAEgvejwgQAgvejwgS3p8EGDBwLQASC96PCBRPIECHtGxfIECETyAAQT8IBXAfEDA8TyBAQI8TwBI/ADAwi/BPFAAQC/Dmj2B/zRpEYALxi/DPGAXNz4AGAI8QgFAC9G8EAGzPgAYAi/BPEMBSEmLmA7syDwgFDGRgAvCPEEBgjxDAVP8AEIBL8E8QQOBPEIBgAvCL8E8RAFzvgAABdoN2DF+ACAv/Nvjw9o/wf80dz4AHB8BgjUBDsA8QQAAvEEAurRACC96PCBzPgAcKLngwcYv3BHLenwRUTyBAd7RsXyBAdE8gAIxPIECAMxE/CAVgfxPAMA8IBcCL8I8UADAL8daO0H/NHGRgAuGL8O8YBe3vgAQCHwAwEH8QgFRPBABAAuIPCAUM74AEAIvwjxDAUAJCxgUbO6RgAuB/EMBQfxBAcEvwjxBAoI8RAFAC4IvwjxCAdP8AEIyvgAAMX4AIC/82+PHmj2B/zR3vgAYHQGCtQ8aBZotEII0QQ5APEEAALxBALo0QHgzvgAYEDqDAC96PBFcEcAAAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xd7
+  pc_program_page: 0x1c1
+  pc_erase_sector: 0x145
+  pc_verify: 0x283
+  data_section_offset: 0x34c
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x10100000
+      end: 0x10300000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 200
+    sectors:
+    - size: 0x2000
+      address: 0x0
+
